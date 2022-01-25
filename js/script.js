@@ -1,11 +1,11 @@
-$(function () {
-  $("a[href*=#]").on("click", function (e) {
-    e.preventDefault();
-    $("html, body").animate(
-      { scrollTop: $($(this).attr("href")).offset().top },
-      500,
-      "linear"
-    );
-  });
-});
+// document.querySelector("#contact-form").addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   e.target.elements.name.value = "";
+//   e.target.elements.email.value = "";
+//   e.target.elements.message.value = "";
+// });
+
+/*******************custom css **********/
+
+
 
