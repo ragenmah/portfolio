@@ -24,19 +24,30 @@
     />
   </head>
   <body>
-    <div class="container-btns" id="navbar">
-      <a href="/" class="btns">Home</a>
-      <a href="/views/services.html" class="btns">Services</a>
-      <a href="" class="btns"> Gallery </a>
-      <a href="/views/works.html" class="btns"> Works </a>
-      <a href="/views/education.html" class="btns"> Education </a>
-      <a href="/views/certificates.html" class="btns"> Certificates </a>
-      <a href="/views/contacts.html" class="btns"> Contacts </a>
+    <div class="pre-loader" id="pre-loader">LOADING...</div>
+    <div class="center-nab-el">
+      <div class="container-btns" id="navbarId">
+        <a href="/" class="btns">Home</a>
+        <a href="/views/services.html" class="btns">Services</a>
+        <a href="" class="btns"> Gallery </a>
+        <a href="/views/works.html" class="btns"> Works </a>
+        <a href="/views/education.html" class="btns"> Education </a>
+        <a href="/views/certificates.html" class="btns"> Certificates </a>
+        <a href="/views/contacts.html" class="btns"> Contacts </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
     <div class="toggle-button-cover">
       <div class="button-cover">
         <div class="button r" id="button-4">
-          <input type="checkbox" class="checkbox" id="toggleId" onchange="toggleTheme();">
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="toggleId"
+            onchange="toggleTheme();"
+          />
           <div class="knobs"></div>
           <div class="layer"></div>
         </div>

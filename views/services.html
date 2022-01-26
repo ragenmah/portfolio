@@ -24,27 +24,36 @@
     />
   </head>
   <body>
-    <div class="pre-loader" id="pre-loader">
-      LOADING...
-    </div>
-    <div class="container-btns" id="navbar">
-      <a href="/" class="btns">Home</a>
-      <a href="" class="btns">Services</a>
-      <a href="/views/gallery.html" class="btns"> Gallery </a>
-      <a href="/views/works.html" class="btns"> Works </a>
-      <a href="/views/education.html" class="btns"> Education </a>
-      <a href="/views/certificates.html" class="btns"> Certificates </a>
-      <a href="/views/contacts.html" class="btns"> Contacts </a>
+    <div class="pre-loader" id="pre-loader">LOADING...</div>
+    <div class="center-nab-el">
+      <div class="container-btns" id="navbarId">
+        <a href="/" class="btns">Home</a>
+        <a href="" class="btns">Services</a>
+        <a href="/views/gallery.html" class="btns"> Gallery </a>
+        <a href="/views/works.html" class="btns"> Works </a>
+        <a href="/views/education.html" class="btns"> Education </a>
+        <a href="/views/certificates.html" class="btns"> Certificates </a>
+        <a href="/views/contacts.html" class="btns"> Contacts </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
     <div class="toggle-button-cover">
       <div class="button-cover">
         <div class="button r" id="button-4">
-          <input type="checkbox" class="checkbox" id="toggleId" onchange="toggleTheme();">
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="toggleId"
+            onchange="toggleTheme();"
+          />
           <div class="knobs"></div>
           <div class="layer"></div>
         </div>
       </div>
     </div>
+    
       <div class="container">
         <div class="container-all">
           <div class="header">
@@ -60,9 +69,14 @@
           />
         </div>
       </div>
-      <section id="section08" class="demo">
-        <a href="#myservices"><span></span>Scroll</a>
-      </section>
+      <div class="scroll-parent">
+        <section id="scroll" class="scroll-down">
+          <a href="#myservices"><span></span>Scroll</a>
+        </section>
+      </div>
+   
+    
+    
 
     <section id="myservices" class="services">
       <h2>What I do?</h2>
@@ -70,12 +84,12 @@
         I believe in RPD rules and I follow it whenever I will be doing
         something new. RPD means Research, Practice and Develop.
       </p>
-      
+
       <div class="d-flex p-20">
         <div class="block">
           <img
             src="../resources/images/services/research.svg"
-            alt=""
+            alt="research.jpg"
             srcset=""
             class="block-img"
           />
@@ -90,7 +104,7 @@
           <img
             src="../resources/images/services/practice.svg"
             class="block-img"
-            alt=""
+            alt="practice.jpg"
             srcset=""
           />
           <div class="block-title">Practice</div>
@@ -103,7 +117,7 @@
         <div class="block">
           <img
             src="../resources/images/services/develop.svg"
-            alt=""
+            alt="develop.jpg"
             srcset=""
             class="block-img"
           />
@@ -122,7 +136,7 @@
         I am learning and working in following some technologies.
       </p>
       <div class="p-20">
-        <ul>
+        <ul class="my-skill-flex">
           <li>
             <h3>Frontend</h3>
             <div class="my-skills pt-10">
