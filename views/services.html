@@ -10,7 +10,7 @@
       rel="shortcut icon"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" id="pagestyle" href="../css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;500&display=swap"
       rel="stylesheet"
@@ -22,12 +22,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/custom.css" />
   </head>
   <body>
-    <div class="custom-cursor"></div>
+    <div class="pre-loader" id="pre-loader">
+      LOADING...
+    </div>
     <div class="container-btns" id="navbar">
-      <button onclick="toggleTheme();">click</button>
       <a href="/" class="btns">Home</a>
       <a href="" class="btns">Services</a>
       <a href="/views/gallery.html" class="btns"> Gallery </a>
@@ -35,6 +35,15 @@
       <a href="/views/education.html" class="btns"> Education </a>
       <a href="/views/certificates.html" class="btns"> Certificates </a>
       <a href="/views/contacts.html" class="btns"> Contacts </a>
+    </div>
+    <div class="toggle-button-cover">
+      <div class="button-cover">
+        <div class="button r" id="button-4">
+          <input type="checkbox" class="checkbox" id="toggleId" onchange="toggleTheme();">
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+      </div>
     </div>
       <div class="container">
         <div class="container-all">

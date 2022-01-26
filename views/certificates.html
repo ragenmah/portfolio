@@ -24,14 +24,25 @@
     />
   </head>
   <body>
+    
     <div class="container-btns" id="navbar">
-      <a href="/" class="btns">Home</a>
+      <a href="/" class="btns" id="homeId" onclick="toggleHomeCss();">Home</a>
+
       <a href="/views/services.html" class="btns">Services</a>
       <a href="/views/gallery.html" class="btns"> Gallery </a>
       <a href="/views/works.html" class="btns"> Works </a>
       <a href="/views/education.html" class="btns"> Education </a>
       <a href="" class="btns"> Certificates </a>
       <a href="/views/contacts.html" class="btns"> Contacts </a>
+    </div>
+    <div class="toggle-button-cover">
+      <div class="button-cover">
+        <div class="button r" id="button-4">
+          <input type="checkbox" class="checkbox" id="toggleId" onchange="toggleTheme();">
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+      </div>
     </div>
     <div class="container">
       <div class="container-all">
@@ -42,14 +53,14 @@
       </div>
       <div class="certificate-image">
         <img
-          src="../resources/images/certificates/certificate.svg"
-          class="service-img"
-          alt="avatar"
+        src="../resources/images/certificates/certificate.svg"
+        class="service-img"
+        alt="avatar"
         />
       </div>
     </div>
+    
     <section id="section08" class="demo">
-
       <a href="#myservices"><span></span>Scroll</a>
     </section>
 
@@ -105,6 +116,6 @@
         </figure>
       </div>
     </section>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

@@ -3,11 +3,19 @@
     --secondary-color: #e5eefa;
     --white-color: #141010;
     --btn-color: #19191a;
+    --black-color: #1b1515;
     --green-color: rgb(29, 99, 29);
     --color: 255, 71, 84;
     --cursor-size: 30px;
+    --icon-color:#141010;
   }
-  
+  @font-face {
+    font-family: "Roboto Mono";
+    src: url("../resources/fonts/RobotoMono-Bold.ttf");
+    src: url("../resources/fonts/RobotoMono-Regular.ttf") format("woff"),
+    url("../resources/fonts/RobotoMono-Light.ttf") format("opentype"),
+    url("../resources/fonts/RobotoMono-Medium.ttf") format("svg");
+    }
   * {
     margin: 0;
     padding: 0;
@@ -17,6 +25,23 @@
     color: var(--white-color);
     /* cursor: none; */
     /* cursor: crosshair; */
+  }
+
+  body {
+    position: relative;
+  }
+  .pre-loader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 18%;
+    background-color: var(--primary-color);
+    color:var(--btn-color);
+    z-index: 8;
+    font-size: 100px;
+    display: flex;
+    justify-content:center;
+  
   }
   
   .container {
@@ -64,7 +89,7 @@
     align-items: flex-start;
   }
   .icons > a {
-    color: var(--white-color);
+    color: var(--icon-color);
     padding: 20px 10px;
   }
   
@@ -497,7 +522,7 @@
     line-height: 50px;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 1px var(--icon-color);
     transition: all 0.2s ease-in-out;
   }
   
@@ -642,3 +667,109 @@
     opacity: 0.9;
   }
   
+  /*********** switch **********/
+.toggle-button-cover {
+  margin-top: 25px;
+  margin-left: 10px;
+  /* position: relative; */
+  position: sticky;
+  float: left;
+  /* z-index: 6; */
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  top: 50%;
+  width: 68px;
+  height: 36px;
+  margin: -20px auto 0 auto;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 5px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: var(--white-color);
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-4 .knobs:before,
+#button-4 .knobs:after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  /* color: #fff; */
+  /* font-size: 10px; */
+  /* font-weight: bold; */
+  text-align: center;
+  line-height: 1;
+  padding: 8px 4px;
+  background-color: var(--black-color);
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-4 .knobs:before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  color: var(--primary-color);
+  content: "\f185";
+}
+
+#button-4 .knobs:after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  color: var(--secondary-color);
+  content: "\f186";
+}
+
+#button-4 .knobs:after {
+  top: -26px;
+  right: 4px;
+  left: auto;
+  background-color: var(--black-color);
+}
+
+#button-4 .checkbox:checked + .knobs:before {
+  top: -26px;
+}
+
+#button-4 .checkbox:checked + .knobs:after {
+  top: 2px;
+}

@@ -4,21 +4,68 @@
 //   e.target.elements.email.value = "";
 //   e.target.elements.message.value = "";
 // });
+window.addEventListener("load", () => {
+  // console.log('page is fully loaded');
+
+  fadeOutEffect();
+});
+
+function fadeOutEffect() {
+  var fadeTarget = document.getElementById("pre-loader");
+  var fadeEffect = setInterval(function () {
+    if (!fadeTarget.style.opacity) {
+      fadeTarget.style.opacity = 1;
+    }
+    if (fadeTarget.style.opacity > 0) {
+      fadeTarget.style.opacity -= 0.1;
+    } else {
+      clearInterval(fadeEffect);
+    }
+  }, 50);
+  fadeTarget.style.zIndex = -1;
+}
 
 /*******************custom css **********/
-
+// window.localStorage.setItem("themeName", "dark");
 var themeName = window.localStorage.getItem("themeName");
-
-if (themeName == "style") {
-  // window.localStorage.setItem("themeName", "style");
-  document.head.innerHTML = '<link rel="stylesheet" href="../css/style.css"/>';
-} 
-else {
-  document.head.innerHTML = '<link rel="stylesheet" href="../css/light.css"/>';
+var fabicon =
+  '<link href="../resources/images/ragen.jpg" rel="shortcut icon" type="image/x-icon">  ';
+var homeCss = '<link rel="stylesheet" href="css/dark.css" />';
+var icons =
+  ' <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"\
+integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="\
+crossorigin="anonymous" referrerpolicy="no-referrer" />';
+if (themeName == "light") {
+  document.head.innerHTML =
+    fabicon + '<link rel="stylesheet" href="../css/light.css"/>' + icons;
+} else {
+  document.head.innerHTML =
+    fabicon + '<link rel="stylesheet" href="../css/dark.css"/>' + icons;
 }
 
 function toggleTheme() {
-  // window.localStorage.clear();
-  window.localStorage.setItem("themeName", "dark");
-  document.head.innerHTML = '<link rel="stylesheet" href="../css/light.css"/>';
+ 
+  var themeName = window.localStorage.getItem("themeName");
+  // document.head.innerHTML = '<link rel="stylesheet" href="../css/light.css"/>'+icons;
+  
+  if (document.getElementById("toggleId").checked && themeName == "light") {
+    window.localStorage.setItem("themeName", "dark");
+    document.head.innerHTML =
+      fabicon + '<link rel="stylesheet" href="../css/dark.css"/>' + icons;
+  } else {
+    window.localStorage.setItem("themeName", "light");
+    document.head.innerHTML =
+      fabicon + '<link rel="stylesheet" href="../css/light.css"/>' + icons;
+  }
+  if (document.getElementById("toggleId").checked && themeName == "dark") {
+    window.localStorage.setItem("themeName", "light");
+    document.head.innerHTML =
+      fabicon + '<link rel="stylesheet" href="../css/light.css"/>' + icons;
+  } else {
+    window.localStorage.setItem("themeName", "dark");
+    document.head.innerHTML =
+      fabicon + '<link rel="stylesheet" href="../css/dark.css"/>' + icons;
+  }
 }
+
+
