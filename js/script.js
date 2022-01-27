@@ -88,7 +88,7 @@ function toggleTheme() {
 }
 
 /**********responsive  ***********/
-function myFunction() {
+function showNavlinks() {
   var x = document.getElementById("navbarId");
   if (x.className === "container-btns") {
     x.className += " responsive";
