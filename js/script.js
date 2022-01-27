@@ -28,24 +28,25 @@ function fadeOutEffect() {
 /*******************custom css **********/
 // window.localStorage.setItem("themeName", "dark");
 var themeName = window.localStorage.getItem("themeName");
+var baseUrl= "https://ragenmah.github.io/portfolio/";
 var fabicon =
-  '<link href="resources/images/ragen.jpg" rel="shortcut icon" type="image/x-icon">  ';
-var homeCss = '<link rel="stylesheet" href="css/dark.css" />';
+  '<link href="'+baseUrl+'resources/images/ragen.jpg" rel="shortcut icon" type="image/x-icon">  ';
+var homeCss = '<link rel="stylesheet" href="'+baseUrl+'css/dark.css" />';
 var icons =
   ' <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"\
 integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="\
 crossorigin="anonymous" referrerpolicy="no-referrer" />';
-var responsive = '<link rel="stylesheet" href="css/responsive.css" />';
+var responsive = '<link rel="stylesheet" href="'+baseUrl+'css/responsive.css" />';
 if (themeName == "light") {
   document.head.innerHTML =
      fabicon +
-    '<link rel="stylesheet" href="css/light.css"/>' +
+    '<link rel="stylesheet" href="'+baseUrl+'css/light.css"/>' +
     icons +
     responsive;
 } else {
   document.head.innerHTML =
      fabicon +
-    '<link rel="stylesheet" href="css/dark.css"/>' +
+    '<link rel="stylesheet" href="'+baseUrl+'css/dark.css"/>' +
     icons +
     responsive;
 }
@@ -58,14 +59,14 @@ function toggleTheme() {
     window.localStorage.setItem("themeName", "dark");
     document.head.innerHTML =
        fabicon +
-      '<link rel="stylesheet" href="css/dark.css"/>' +
+      '<link rel="stylesheet" href="'+baseUrl+'css/dark.css"/>' +
       icons +
       responsive;
   } else {
     window.localStorage.setItem("themeName", "light");
     document.head.innerHTML =
        fabicon +
-      '<link rel="stylesheet" href="css/light.css"/>' +
+      '<link rel="stylesheet" href="'+baseUrl+'css/light.css"/>' +
       icons +
       responsive;
   }
@@ -73,14 +74,14 @@ function toggleTheme() {
     window.localStorage.setItem("themeName", "light");
     document.head.innerHTML =
        fabicon +
-      '<link rel="stylesheet" href="css/light.css"/>' +
+      '<link rel="stylesheet" href="'+baseUrl+'css/light.css"/>' +
       icons +
       responsive;
   } else {
     window.localStorage.setItem("themeName", "dark");
     document.head.innerHTML =
        fabicon +
-      '<link rel="stylesheet" href="css/dark.css"/>' +
+      '<link rel="stylesheet" href="'+baseUrl+'css/dark.css"/>' +
       icons +
       responsive;
   }
