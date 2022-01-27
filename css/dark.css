@@ -7,7 +7,8 @@
   --green-color: rgb(29, 99, 29);
   --color: 255, 71, 84;
   --cursor-size: 30px;
-  --icon-color: #888888;
+  --icon-color: #141010;
+  --social-icon-color: #888888;
 }
 @font-face {
   font-family: "CustomFont";
@@ -90,7 +91,7 @@ body {
   align-items: flex-start;
 }
 .icons > a {
-  color: var(--icon-color);
+  color: var(--social-icon-color);
   padding: 20px 10px;
 }
 
@@ -146,14 +147,14 @@ body {
   width: 100%;
 }
 
-.scroll-parent{
+.scroll-parent {
   display: relative;
-  height: 5vh;
+  /* height: 5vh; */
 }
 #scroll a {
-  padding-top: 50px;
+  padding-top: 100px;
 }
-  
+
 #scroll a span {
   position: absolute;
   top: 0;
@@ -212,7 +213,7 @@ body {
 .d-flex {
   display: flex;
   flex: 1;
-  overflow: scroll;
+  /* overflow: hidden; */
 }
 
 .block {
@@ -461,6 +462,7 @@ figure > .overlay {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 50px;
 }
 
 .form-horizontal {
@@ -503,7 +505,6 @@ textarea {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  
 }
 
 /* Social Media Icons */
