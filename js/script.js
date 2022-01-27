@@ -39,13 +39,13 @@ var baseurl = '  <base href="https://ragenmah.github.io/portfolio" >';
 var responsive = '<link rel="stylesheet" href="css/responsive.css" />';
 if (themeName == "light") {
   document.head.innerHTML =
-    baseurl+fabicon +
+    baseurl + fabicon +
     '<link rel="stylesheet" href="css/light.css"/>' +
     icons +
     responsive;
 } else {
   document.head.innerHTML =
-    baseurl+fabicon +
+    baseurl + fabicon +
     '<link rel="stylesheet" href="css/dark.css"/>' +
     icons +
     responsive;
@@ -58,14 +58,14 @@ function toggleTheme() {
   if (document.getElementById("toggleId").checked && themeName == "light") {
     window.localStorage.setItem("themeName", "dark");
     document.head.innerHTML =
-      baseurl+fabicon +
+      baseurl + fabicon +
       '<link rel="stylesheet" href="css/dark.css"/>' +
       icons +
       responsive;
   } else {
     window.localStorage.setItem("themeName", "light");
     document.head.innerHTML =
-      baseurl+fabicon +
+      baseurl + fabicon +
       '<link rel="stylesheet" href="css/light.css"/>' +
       icons +
       responsive;
@@ -73,14 +73,14 @@ function toggleTheme() {
   if (document.getElementById("toggleId").checked && themeName == "dark") {
     window.localStorage.setItem("themeName", "light");
     document.head.innerHTML =
-      baseurl+fabicon +
+      baseurl + fabicon +
       '<link rel="stylesheet" href="css/light.css"/>' +
       icons +
       responsive;
   } else {
     window.localStorage.setItem("themeName", "dark");
     document.head.innerHTML =
-      baseurl+fabicon +
+      baseurl + fabicon +
       '<link rel="stylesheet" href="css/dark.css"/>' +
       icons +
       responsive;
