@@ -29,7 +29,7 @@ function fadeOutEffect() {
 // window.localStorage.setItem("themeName", "dark");
 var themeName = window.localStorage.getItem("themeName");
 var fabicon =
-  '<link href="/resources/images/ragen.jpg" rel="shortcut icon" type="image/x-icon">  ';
+  '<link href="resources/images/ragen.jpg" rel="shortcut icon" type="image/x-icon">  ';
 var homeCss = '<link rel="stylesheet" href="css/dark.css" />';
 var icons =
   ' <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"\
