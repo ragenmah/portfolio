@@ -28,7 +28,7 @@ function fadeOutEffect() {
 /*******************custom css **********/
 // window.localStorage.setItem("themeName", "dark");
 var themeName = window.localStorage.getItem("themeName");
-var baseurl+fabicon =
+var fabicon =
   '<link href="/resources/images/ragen.jpg" rel="shortcut icon" type="image/x-icon">  ';
 var homeCss = '<link rel="stylesheet" href="css/dark.css" />';
 var icons =
