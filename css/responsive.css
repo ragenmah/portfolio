@@ -1,7 +1,17 @@
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
   .pre-loader {
-    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+  }
+  /*********** Scroll down ***********/
+  .scroll-parent {
+    height: 10vh;
+  }
+  #scroll a {
+    margin-top: 10px;
+    padding-top: 2%;
   }
 
   /**************** Nav Bar ********************/
@@ -70,15 +80,36 @@
   }
 
   /************* works ***************/
+
+  .works-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-image-wrapper {
+    padding: 20px;
+    width: 180px;
+  }
+
   .education-container {
     flex-direction: column;
   }
-
   /********* gallery ************/
-  .gallery-img {
-    object-fit: fill;
+  
+  .my-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
   }
-
+  .my-gallery > figure {
+    min-width: 200px;
+    height: 200px;
+  }
+  figure > .overlay {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
   /************* contacts ***************/
 
   .direct-contact-container {
@@ -100,9 +131,76 @@
     line-height: 50px;
     font-size: 2rem;
   }
+  .block-description {
+    padding: 12px;
+  }
+
+  .d-flex {
+    overflow: scroll;
+  }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 801px) {
+  /************** Nav bar **************/
+  .center-nab-el {
+    display: block;
+    background-color: var(--secondary-color);
+    position: sticky;
+  }
+  #navbarId a:not(:first-child) {
+    display: none;
+  }
+  #navbarId a.icon {
+    float: right;
+    display: block;
+  }
+  #navbarId.responsive {
+    position: relative;
+  }
+  #navbarId.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navbarId.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  /*************container details **************/
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-all {
+    width: 100%;
+    height: 40vh;
+  }
+  .pro-image {
+    float: center;
+    height: 70vh;
+    width: 70%;
+  }
+
+  
+  .d-flex {
+    overflow: scroll;
+  }
+  /************* works ***************/
+
+  .works-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+
+
+  /**********certificates *************/
+  .gallery-img {
+    object-fit: fill;
+  }
+  /************* contacts **************/
   .contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -125,11 +223,5 @@
     width: 60px;
     height: 60px;
     line-height: 60px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  .send-button {
-    width: 99%;
   }
 }
