@@ -105,7 +105,9 @@ body {
   align-items: center;
   background-color: var(--secondary-color);
   position: sticky;
+  top: 0;
   padding: 10px;
+  z-index: 6;
 }
 .container-btns {
   /* display: flex; */
@@ -526,6 +528,72 @@ textarea {
 }
 
 /****************works********************/
+.prev-work-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* flex: 2; */
+  flex-wrap: wrap;
+  /* width: 10%; */
+}
+
+.prev-work-container > figure {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 13%;
+}
+
+.prev-work-figure-img {
+  position: relative;
+}
+.prev-work-img {
+  height: 200px;
+  max-width: 350px;
+  object-fit: contain;
+}
+.prev-work-figure-img > .overlay {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 2;
+}
+.prev-work-container > figure > figcaption {
+  height: 100%;
+  width: 300px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.prev-work-link {
+  padding: 5px;
+  font-size: 12px;
+  background-color: var(--secondary-color);
+  border: 0.1rem solid var(--white-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.prev-work-link:hover {
+  background-color: var(--primary-color);
+  color: var(--btn-color);
+}
+
+figcaption > ul {
+  padding: 10px 30px 10px 10px;
+  font-size: 13px;
+  text-align: justify;
+}
 .works-container {
   height: 400px;
   width: 100%;
