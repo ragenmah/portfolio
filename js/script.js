@@ -38,46 +38,93 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />';
 var responsive = '<link rel="stylesheet" href="../css/responsive.css" />';
 if (themeName == "light") {
   document.head.innerHTML =
-    fabicon + '<link rel="stylesheet" href="../css/light.css"/>' + icons+responsive;
+    fabicon +
+    '<link rel="stylesheet" href="../css/light.css"/>' +
+    icons +
+    responsive;
 } else {
   document.head.innerHTML =
-    fabicon + '<link rel="stylesheet" href="../css/dark.css"/>' + icons+responsive;
+    fabicon +
+    '<link rel="stylesheet" href="../css/dark.css"/>' +
+    icons +
+    responsive;
 }
 
 function toggleTheme() {
- 
   var themeName = window.localStorage.getItem("themeName");
   // document.head.innerHTML = '<link rel="stylesheet" href="../css/light.css"/>'+icons+responsive;
-  
+
   if (document.getElementById("toggleId").checked && themeName == "light") {
     window.localStorage.setItem("themeName", "dark");
     document.head.innerHTML =
-      fabicon + '<link rel="stylesheet" href="../css/dark.css"/>' + icons+responsive;
+      fabicon +
+      '<link rel="stylesheet" href="../css/dark.css"/>' +
+      icons +
+      responsive;
   } else {
     window.localStorage.setItem("themeName", "light");
     document.head.innerHTML =
-      fabicon + '<link rel="stylesheet" href="../css/light.css"/>' + icons+responsive;
+      fabicon +
+      '<link rel="stylesheet" href="../css/light.css"/>' +
+      icons +
+      responsive;
   }
   if (document.getElementById("toggleId").checked && themeName == "dark") {
     window.localStorage.setItem("themeName", "light");
     document.head.innerHTML =
-      fabicon + '<link rel="stylesheet" href="../css/light.css"/>' + icons+responsive;
+      fabicon +
+      '<link rel="stylesheet" href="../css/light.css"/>' +
+      icons +
+      responsive;
   } else {
     window.localStorage.setItem("themeName", "dark");
     document.head.innerHTML =
-      fabicon + '<link rel="stylesheet" href="../css/dark.css"/>' + icons+responsive;
+      fabicon +
+      '<link rel="stylesheet" href="../css/dark.css"/>' +
+      icons +
+      responsive;
   }
 }
 
-
-
-
 /**********responsive  ***********/
-function myFunction() {
+function showNavlinks() {
   var x = document.getElementById("navbarId");
   if (x.className === "container-btns") {
     x.className += " responsive";
   } else {
     x.className = "container-btns";
+  }
+}
+
+/********* Contact Form *************/
+function handleFormData() {
+  var name = document.contactForm.name.value;
+  var email = document.contactForm.email.value;
+  var message = document.contactForm.message.value;
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  
+  if (name == "" || name == null) {
+    alert("Please provide your full name");
+    document.contactForm.name.focus();
+    return false;
+  } else if (email == "" || email == null) {
+    alert("Please provide your valid email address");
+    document.contactForm.email.focus();
+    return false;
+    } else if(!email.match(mailformat))
+    {
+      alert("You have entered an invalid email address!");
+      document.contactForm.email.focus();
+      return false;
+  }
+   else if (message == "" || message == null) {
+    alert("Please write some message");
+    document.contactForm.message.focus();
+    return false;
+  } else if (message.length < 15) {
+    alert("Your message should be at least 15 character long");
+    return false;
+  }else{
+    alert("Thank You for time...")
   }
 }
