@@ -194,7 +194,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
  
-
+  .prev-work-container > figure > figcaption{
+    width: 100%;
+  }
 
   /**********certificates *************/
   .gallery-img {

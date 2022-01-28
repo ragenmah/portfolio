@@ -10,7 +10,6 @@
       rel="shortcut icon"
       type="image/x-icon"
     />
-   
   </head>
 
   <body>
@@ -71,7 +70,12 @@
       <h1 class="section-header p-20">Contact</h1>
 
       <div class="contact-wrapper p-20">
-        <form id="contact-form" class="form-horizontal" role="form">
+        <form
+          id="contact-form"
+          class="form-horizontal"
+          name="contactForm"
+          role="form"
+        >
           <div class="form-group">
             <input
               type="text"
@@ -81,7 +85,6 @@
               name="name"
               value=""
               autocomplete="off"
-              required
             />
           </div>
 
@@ -94,19 +97,24 @@
               name="email"
               autocomplete="off"
               value=""
-              required
             />
           </div>
           <div class="form-group">
-          <textarea
-            class="form-control"
-            rows="10"
-            placeholder="MESSAGE"
-            name="message"
-            required
-          ></textarea>
+            <textarea
+              class="form-control"
+              rows="10"
+              placeholder="MESSAGE"
+              name="message"
+              id="message"
+            ></textarea>
           </div>
-          <button class="send-button" id="submit" type="submit" value="SEND">
+          <button
+            class="send-button"
+            id="submit"
+            type="button"
+            value="SEND"
+            onclick="handleFormData();"
+          >
             <span class="send-text"> SEND</span>
             <i class="fa fa-paper-plane"></i>
           </button>
