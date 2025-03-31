@@ -89,8 +89,8 @@ section {
 .pro-image {
   /* width: 20%; */
   /* margin-top: 8%; */
-  height: 60%;
-  /* width: 38%; */
+  height: 60vh;
+  width: 38%;
   position: relative;
   display: inline-block;
   transition: all 300ms linear;
