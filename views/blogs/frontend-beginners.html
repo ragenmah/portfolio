@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../resources/images/fabicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>Blogs - Ragen Maharjan</title>
+    <link rel="stylesheet" href="../../css/light.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" \
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" \
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/responsive.css" />
+</head>
+
+<body>
+    <!-- some important links
+    stop watch
+    motivational quotes -->
+    <div class="center-nab-el">
+        <a href="/index.html">
+            <p class="logo text-center">
+                <img src="/resources/images/fabicon.ico" width="20px" alt="" srcset="" />
+                RAGEN MAHARJAN
+            </p>
+        </a>
+        <div class="container-btns" id="navbarId">
+            <a href="../../index.html" class="btns">Home</a>
+            <a href="../../views/aboutme.html" class="btns">About</a>
+            <a href="../../views/services.html" class="btns">Services</a>
+            <a href="../../views/gallery.html" class="btns">Gallery</a>
+            <a href="../../views/works.html" class="btns">Works</a>
+            <a href="../../views/education.html" class="btns">Education</a>
+            <a href="../../views/contacts.html" class="btns">Contacts</a>
+            <a href="../../views/blogs/blogs.html" class="btns active">Blogs</a>
+            <a href="javascript:void(0);" class="icon" id="bars" onclick="showNavlinks()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="icon" id="close" onclick="closeNavlinks()">
+                <i class="fa fa-close"></i>
+            </a>
+        </div>
+    </div>
+    <div class="toggle-button-cover">
+        <div class="button-cover">
+            <div class="button r" id="button-4">
+                <input type="checkbox" class="checkbox" id="toggleId" onchange="toggleTheme();" />
+                <div class="knobs"></div>
+                <div class="layer"></div>
+            </div>
+        </div>
+    </div>
+    <main class="contents">
+        <div class="blogs">
+            <div class="section-title">
+                <h2>Useful links for Frontend developers (Beginners)</h2>
+                <p class="date">3 March 2023</p>
+            </div>
+
+            <div class="blog-container">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            1. HTML (Hypertext Markup Language)
+                        </div>
+                        <div class="accordion-item-body">
+                            <div class="accordion-item-body-content">
+                                HTML stands for HyperText Markup Language. It is used on the
+                                frontend and gives the structure to the webpage which you can
+                                style using CSS and make interactive using JavaScript.
+                                <br />
+                                Visit the following resources to learn more:
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-cloud"></i>
+                                        <a href="https://www.w3schools.com/html/default.asp"><i
+                                                class="fas fa-web"></i>W3Schools: Learn HTML</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-cloud"></i>
+                                        <a href="https://html.com/">HTML For Beginners The Easy Way</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-cloud"></i>
+                                        <a href="https://www.internetingishard.com/html-and-css/">A friendly web
+                                            development tutorial for complete beginners
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                                        <a href="https://www.youtube.com/watch?v=mJgBOIoGihA">HTML Full Course for
+                                            Beginners
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+
+                                        <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg">HTML Full Course - Build a
+                                            Website Tutorial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+
+                                        <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg">HTML Tutorial for
+                                            Beginners: HTML Crash Course
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">What is Web Development?</div>
+                        <div class="accordion-item-body">
+                            <div class="accordion-item-body-content">
+                                Web Development broadly refers to the tasks associated with
+                                developing functional websites and applications for the
+                                Internet. The web development process includes web design, web
+                                content development, client-side/server-side scripting and
+                                network security configuration, among other tasks.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../js/script.js"></script>
+</body>
+
+</html>

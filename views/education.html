@@ -1,163 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ragen Maharjan - Education</title>
-    <link
-      href="../resources/images/ragen.jpg"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
-    
-  </head>
 
-  <body>
-    <div class="pre-loader" id="pre-loader">LOADING...</div>
-    <div class="center-nab-el">
-      <div class="container-btns" id="navbarId">
-        <a href="/" class="btns">Home</a>
-        <a href="/views/services.html" class="btns">Services</a>
-        <a href="/views/gallery.html" class="btns"> Gallery </a>
-        <a href="/views/works.html" class="btns"> Works </a>
-        <a href="" class="btns"> Education </a>
-        <a href="/views/certificates.html" class="btns"> Certificates </a>
-        <a href="/views/contacts.html" class="btns"> Contacts </a>
-        <a href="javascript:void(0);" class="icon" onclick="showNavlinks()">
-          <i class="fa fa-bars"></i>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../resources/images/fabicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <title>Education - Ragen Maharjan</title>
+
+  <link rel="stylesheet" href="../css/light.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" \
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" \
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="center-nab-el">
+    <a href="/index.html">
+      <p class="logo ">
+        <img src="/resources/images/fabicon.ico" width="20px" height="15px" alt="" srcset="" />
+        <span>RAGEN MAHARJAN</span>
+      </p>
+    </a>
+    <div class=" container-btns" id="navbarId">
+      <a href="../index.html" class="btns">Home</a>
+      <a href="/views/aboutme.html" class="btns">About</a>
+      <a href="/views/services.html" class="btns">Services</a>
+      <a href="/views/gallery.html" class="btns">Gallery</a>
+      <a href="/views/works.html" class="btns">Works</a>
+      <a href="/views/education.html" class="btns active">Education</a>
+      <a href="/views/contacts.html" class="btns">Contacts</a>
+      <a href="/views/blogs/blogs.html" class="btns">Blogs</a>
+      <a href="javascript:void(0);" class="icon" id="bars" onclick="showNavlinks()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="javascript:void(0);" class="icon" id="close" onclick="closeNavlinks()">
+        <i class="fa fa-close"></i>
+      </a>
+    </div>
+
+  </div>
+  
+  <div class="toggle-button-cover">
+    <div class="button-cover">
+      <div class="button r" id="button-4">
+        <input type="checkbox" class="checkbox" id="toggleId" onchange="toggleTheme();" />
+        <div class="knobs"></div>
+        <div class="layer"></div>
       </div>
     </div>
-    <div class="toggle-button-cover">
-      <div class="button-cover">
-        <div class="button r" id="button-4">
-          <input
-            type="checkbox"
-            class="checkbox"
-            id="toggleId"
-            onchange="toggleTheme();"
-          />
-          <div class="knobs"></div>
-          <div class="layer"></div>
+  </div>
+  <div class="container">
+    <div class="container-all">
+      <div class="header">
+        <div class="section-title">
+          <h2>My Education</h2>
+        </div>
+        <div class="slick-section">
+          <a href="#myeducation" class="service-card">
+            <i class="fa fa-window-maximize icon-back" aria-hidden="true"></i>
+            <h3 class="card-number">4+</h3>
+            <h4 class="card-title">Institutes Joined</h4>
+          </a>
+          <a href="#mycertificates" class="service-card">
+            <i class="fa fa-window-maximize icon-back" aria-hidden="true"></i>
+            <h3 class="card-number">5+</h3>
+            <h4 class="card-title">Trainings</h4>
+          </a>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="container-all">
-        <div class="header">
-          <h1>Hello there!</h1>
-          <h1>Welcome to my education...</h1>
-        </div>
-      </div>
-      <div class="service-image">
-        <img
-          src="../resources/images/education/education.svg"
-          class="service-img"
-          alt="avatar"
-        />
-      </div>
+    <div class="service-image">
+      <img src="../resources/images/education/education.svg" class="service-img" alt="avatar" />
     </div>
-    <div class="scroll-parent">
-      <section id="scroll" class="scroll-down">
-        <a href="#myeducation"><span></span></a>
-      </section>
-    </div>
-
-
-    <section id="myeducation" class="services">
-      <h2>My Education</h2>
-
-      <div class="education-container">
-        <figure>
-          <div class="figure-img">
-            <img
-              src="../resources/images/education/khec.jpg"
-              class="education-img"
-              alt="khec.jpg"
-            />
-            <div class="overlay"></div>
-          </div>
-          <figcaption>
-            <h3 class="sec-bck-color">KHWOPA ENGINEERING COLLEGE</h3>
-            <span>
-              <h5 class="sec-bck-color">
-                Liwali, Bhaktapur — <i class="sec-bck-color">Bachelors</i>
-              </h5>
-            </span>
-            <span>
-              <h6 class="sec-bck-color">
-                2014 - 2018 <i class="pass-status">passed</i>
-              </h6>
-            </span>
-            <a
-              href="https://khec.edu.np/"
-              target="_blank"
-              class="education-link"
-              >Visit</a
-            >
-          </figcaption>
-        </figure>
-        <figure>
-          <div class="figure-img">
-            <img
-              src="../resources/images/education/dav.jpg"
-              class="education-img"
-              alt="dav.jpg"
-            />
-            <div class="overlay"></div>
-          </div>
-          <figcaption>
-            <h3 class="sec-bck-color">DAV COLLEGE</h3>
-            <span>
-              <h5 class="sec-bck-color">
-                Dhobighat, Lalitpur — <i class="sec-bck-color">+2 HSEB</i>
-              </h5>
-            </span>
-            <span>
-              <h6 class="sec-bck-color">
-                2012 - 2014 <i class="pass-status">passed</i>
-              </h6>
-            </span>
-            <a
-              href="https://davcollege.edu.np/"
-              target="_blank"
-              class="education-link"
-              >Visit</a
-            >
-          </figcaption>
-        </figure>
-        <figure>
-          <div class="figure-img">
-            <img
-              src="../resources/images/education/ujjwal.jpg"
-              class="education-img"
-              alt="ujjwal.jpg"
-            />
-            <div class="overlay"></div>
-          </div>
-          <figcaption>
-            <h3 class="sec-bck-color">UJJWAL SHISHU NIKETAN ACADEMY</h3>
-            <span>
-              <h5 class="sec-bck-color">
-                Kirtipur, Kathmandu — <i class="sec-bck-color">SLC</i>
-              </h5>
-            </span>
-            <span>
-              <h6 class="sec-bck-color">
-                2012 <i class="pass-status">passed</i>
-              </h6>
-            </span>
-            <a
-              href="https://www.facebook.com/usna.edu/"
-              target="_blank"
-              class="education-link"
-              >Visit</a
-            >
-          </figcaption>
-        </figure>
-      </div>
+  </div>
+  <div class="scroll-parent">
+    <section id="scroll" class="scroll-down">
+      <a href="#myeducation"><span></span></a>
     </section>
-    <script src="../js/script.js"></script>
-  </body>
+  </div>
+
+  <section id="myeducation" class="contents">
+    <div class="section-title">
+      <h2>My Education</h2>
+    </div>
+
+    <div class="education-container">
+      <figure>
+        <div class="figure-img">
+          <img src="../resources/images/education/ncit-bg.jpg" class="education-img" alt="khec.jpg" />
+          <div class="overlay"></div>
+        </div>
+        <figcaption>
+          <h3>Nepal College Of Information Technology</h3>
+          <span>
+            <h5>Balkumari, Lalitpur, Nepal — <i>MECE</i></h5>
+          </span>
+          <span>
+            <h6>2020 - 2022 <i class="pass-status">Running</i></h6>
+          </span>
+          <a href="https://khec.edu.np/" target="_blank" class="education-link">Visit</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="figure-img">
+          <img src="../resources/images/education/khec.jpg" class="education-img" alt="khec.jpg" />
+          <div class="overlay"></div>
+        </div>
+        <figcaption>
+          <h3>KHWOPA ENGINEERING COLLEGE</h3>
+          <span>
+            <h5>Liwali, Bhaktapur — <i>Bachelors</i></h5>
+          </span>
+          <span>
+            <h6>2014 - 2018 <i class="pass-status">passed</i></h6>
+          </span>
+          <a href="https://khec.edu.np/" target="_blank" class="education-link">Visit</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="figure-img">
+          <img src="../resources/images/education/dav.jpg" class="education-img" alt="dav.jpg" />
+          <div class="overlay"></div>
+        </div>
+        <figcaption>
+          <h3>DAV COLLEGE</h3>
+          <span>
+            <h5>Dhobighat, Lalitpur — <i>+2 HSEB</i></h5>
+          </span>
+          <span>
+            <h6>2012 - 2014 <i class="pass-status">passed</i></h6>
+          </span>
+          <a href="https://davcollege.edu.np/" target="_blank" class="education-link">Visit</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <div class="figure-img">
+          <img src="../resources/images/education/ujjwal.jpg" class="education-img" alt="ujjwal.jpg" />
+          <div class="overlay"></div>
+        </div>
+        <figcaption>
+          <h3>UJJWAL SHISHU NIKETAN ACADEMY</h3>
+          <span>
+            <h5>Kirtipur, Kathmandu — <i>SLC</i></h5>
+          </span>
+          <span>
+            <h6>2012 <i class="pass-status">passed</i></h6>
+          </span>
+          <a href="https://www.facebook.com/usna.edu/" target="_blank" class="education-link">Visit</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="mycertificates" class="contents">
+    <div class="section-title">
+      <h2>Certificates</h2>
+    </div>
+    <!-- <p>Only some of my certicates are shown.</p> -->
+    <div class="my-gallery">
+      <figure>
+        <img src="../resources/images/certificates/10.jpg" alt="ragen" class="certificate-img" />
+        <figcaption>Futsal Tournament</figcaption>
+        <div class="overlay"></div>
+      </figure>
+      <figure>
+        <img src="../resources/images/certificates/18.jpg" alt="ragen" class="certificate-img" />
+        <figcaption>Advanced Java Training</figcaption>
+        <div class="overlay"></div>
+      </figure>
+      <figure>
+        <img src="../resources/images/certificates/7.jpg" alt="ragen" class="certificate-img" />
+        <figcaption>3rd Nepali Samaj Contest</figcaption>
+        <div class="overlay"></div>
+      </figure>
+      <figure>
+        <img src="../resources/images/certificates/9.jpg" alt="ragen" class="certificate-img" />
+        <figcaption>Final year project exhibition</figcaption>
+        <div class="overlay"></div>
+      </figure>
+      <figure>
+        <img src="../resources/images/certificates/broadway.jpg" alt="ragen" class="certificate-img" />
+        <figcaption>Flutter framework training</figcaption>
+        <div class="overlay"></div>
+      </figure>
+      <figure></figure>
+    </div>
+  </section>
+  <script src="../js/script.js"></script>
+</body>
+
 </html>

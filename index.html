@@ -5,30 +5,42 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="resources/images/fabicon.ico" rel="shortcut icon" type="image/x-icon" />
   <title>Ragen Maharjan</title>
-  <link href="resources/images/ragen.jpg" rel="shortcut icon" type="image/x-icon" />
-  <!-- <link rel="stylesheet" href="css/style.css" /> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400;500&display=swap"
-    rel="stylesheet" /> -->
- 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" \
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" \
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/light.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
 </head>
 
 <body>
 
-  <div class="pre-loader" id="pre-loader">
+  <!-- <div class="pre-loader" id="pre-loader">
     LOADING...
-  </div>
+  </div> -->
   <div class="center-nab-el">
+    <a href="index.html">
+      <p class="logo text-center"><img src="resources/images/fabicon.ico" width="20px" alt="" srcset=""> RAGEN MAHARJAN
+      </p>
+    </a>
     <div class="container-btns " id="navbarId">
-      <a href="" class="btns" >Home</a>
+      <a href="index.html" class="btns active">Home</a>
+      <a href="views/aboutme.html" class="btns">About</a>
       <a href="views/services.html" class="btns">Services</a>
-      <a href="views/gallery.html" class="btns"> Gallery </a>
-      <a href="views/works.html" class="btns"> Works </a>
-      <a href="views/education.html" class="btns"> Education </a>
-      <a href="views/certificates.html" class="btns"> Certificates </a>
-      <a href="views/contacts.html" class="btns"> Contacts </a>
-      <a href="javascript:void(0);" class="icon" onclick="showNavlinks()">
+      <a href="views/gallery.html" class="btns"> Gallery</a>
+      <a href="views/works.html" class="btns">Works</a>
+      <a href="views/education.html" class="btns">Education</a>
+      <a href="views/contacts.html" class="btns">Contacts</a>
+      <a href="views/blogs/blogs.html" class="btns">Blogs</a>
+      <a href="javascript:void(0);" class="icon" id="bars" onclick="showNavlinks()">
         <i class="fa fa-bars"></i>
+      </a>
+      <a href="javascript:void(0);" class="icon" id="close" onclick="closeNavlinks()">
+        <i class="fa fa-close"></i>
       </a>
     </div>
   </div>
@@ -41,24 +53,114 @@
       </div>
     </div>
   </div>
+
   <div class="container">
     <div class="container-all">
       <div class="header">
-        <h1>Hello there!</h1>
-        <h1>Welcome to my portfolio...</h1>
+        <h1>RAGEN MAHARJAN</h1>
+        <!-- <h2>Kathmandu, Nepal</h2> -->
+        <br>
+
+        <a href="mailto:ragenmah99@gmail.com" class="my-email">ragenmah99@gmail.com</a>
+        <br>
+        <br>
+        <br>
+     <div class="header-btns">
+          <a href="views/resume.html" class="prev-work-link pt-10">My Resume</a>
+          <a href="views/aboutme.html" class="prev-work-link pt-10">About Me</a>
+        </div>
       </div>
+
       <div class="icons">
         <a href="https://www.facebook.com/ragen.maharjan" class="fa-brands fa-facebook-square" target="_blank"></a>
         <a href="https://github.com/ragenmah" class="fa-brands fa-github-square" target="_blank"></a>
         <a href="https://www.linkedin.com/in/ragen-maharjan-a4000118a/" class="fa-brands fa-linkedin"
           target="_blank"></a>
-        <a href="https://www.reddit.com/user/ragenmah99" class="fa-brands fa-reddit-square" target="_blank"></a>
+        <!-- <a href="https://www.reddit.com/user/ragenmah99" class="fa-brands fa-reddit-square" target="_blank"></a> -->
       </div>
     </div>
     <div class="pro-image">
-      <img src="resources/images/ragen5.png" class="profile-img" alt="avatar" />
+      <img src="resources/images/ragen1.png" class="profile-img " alt="avatar">
+      <img src="resources/images/ragen-back.png" class="profile-img img-top" alt="avatar" />
     </div>
+
   </div>
+  <div class="scroll-parent">
+    <section id="scroll" class="scroll-down">
+      <a href="#aboutme"><span></span></a>
+    </section>
+  </div>
+
+  <main id="aboutme" class="contents">
+    <section>
+      <div class="section-title">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="d-flex">
+        <div class="about-img">
+          <img src="resources/images/gallery/ragen_college.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="aboutme-content">
+          <h2 style="text-align: justify;">Namaste!</h2>
+          <br>
+
+          <div style="text-align: justify;">I am a passionate developer who brings creative ideas to foster the goals of
+            the company, with a strong understanding of the mobile application development process and adaptable to any
+            work environment.
+            <br />
+            <br />
+            After the graduations, I have worked in many projects with many professionals.
+            <br />
+            <br />
+            Please feel free to read more about me, also you can check out my resume, projects, view
+            statistics, or contact me.
+            <br />
+            <br />
+            Some of my interests are in :
+            <ul class="interests">
+              <li><a href=""><i class="fa fa-angle-right"></i> Software development (Full stack)</a></li>
+              <li><a href=""><i class="fa fa-angle-right"></i> Mobile application development</a></li>
+              <li><a href=""><i class="fa fa-angle-right"></i> UI/UX</a></li>
+              <li><a href=""><i class="fa fa-angle-right"></i>
+                  Video editing</a></li>
+              <li><a href="https://www.youtube.com/channel/UCOAMEGEcp7GskaGXV8gEtEg"><i class="fa fa-angle-right"></i>
+                  Playing guitar</a></li>
+              <!-- <li><a href="https://www.youtube.com/channel/UCOAMEGEcp7GskaGXV8gEtEg"><i class="fa fa-angle-right"></i>
+                  Song writing</a></li> -->
+            </ul>
+            <br />
+            <br />
+            <a href="views/aboutme.html" class="prev-work-link">Read more</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-site">
+      <div class="section-title">
+        <h2>About This Site</h2>
+      </div>
+
+      <div class="d-flex">
+        <div class="aboutme-content">
+          <h2 style="">Just connect with me...</h2>
+          <br><br>
+          <div style="text-align: justify;">This site is about me and my personal portfolio website, is made to contact
+            with
+            professionals. <br><br>The site is made to share my services, projects, resume and works.
+            <br><br>
+            I'm always ready to share my knowledge and experiences on my respected field. Just contact with me.
+          </div>
+        </div>
+        <div class="about-img">
+          <img src="resources/images/banners/website.png" class="img-fluid" alt="">
+        </div>
+
+      </div>
+    </section>
+  </main>
+
   <script src="js/script.js"></script>
 </body>
 

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../../resources/images/fabicon.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <title>Blogs - Ragen Maharjan</title>
+    <link rel="stylesheet" href="../../css/light.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      \
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      \
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- some important links
+    stop watch
+    motivational quotes -->
+    <div class="center-nab-el">
+      <a href="/index.html">
+        <p class="logo text-center">
+          <img
+            src="/resources/images/fabicon.ico"
+            width="20px"
+            alt=""
+            srcset=""
+          />
+          RAGEN MAHARJAN
+        </p>
+      </a>
+      <div class="container-btns" id="navbarId">
+        <a href="../../index.html" class="btns">Home</a>
+        <a href="../../views/aboutme.html" class="btns">About</a>
+        <a href="../../views/services.html" class="btns">Services</a>
+        <a href="../../views/gallery.html" class="btns">Gallery</a>
+        <a href="../../views/works.html" class="btns">Works</a>
+        <a href="../../views/education.html" class="btns">Education</a>
+        <a href="../../views/contacts.html" class="btns">Contacts</a>
+        <a href="../../views/blogs/blogs.html" class="btns active">Blogs</a>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          id="bars"
+          onclick="showNavlinks()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a
+          href="javascript:void(0);"
+          class="icon"
+          id="close"
+          onclick="closeNavlinks()"
+        >
+          <i class="fa fa-close"></i>
+        </a>
+      </div>
+    </div>
+    <div class="toggle-button-cover">
+      <div class="button-cover">
+        <div class="button r" id="button-4">
+          <input
+            type="checkbox"
+            class="checkbox"
+            id="toggleId"
+            onchange="toggleTheme();"
+          />
+          <div class="knobs"></div>
+          <div class="layer"></div>
+        </div>
+      </div>
+    </div>
+    <main class="contents">
+      <div class="blogs">
+        <div class="section-title">
+          <h2>Blogs</h2>
+        </div>
+
+        <div class="post-container">
+          <h3>Blogs are comming soon...</h3>
+          <a href="frontend-beginners.html" class="post">
+            <div class="post-detail">
+              <h1>Useful links for Frontend developers (Beginners)</h1>
+              <div class="post-content">
+                <p>
+                  For the frontend developer, there are some useful links for
+                  better production and development journey. kick start your
+                  fronend development journey...
+                </p>
+              </div>
+              <p class="date">3 March 2023</p>
+            </div>
+            <img
+              src="https://courses.wscubetech.com/s/store/courses/5f5338c60cf2d7d974471146/cover.jpg?v=1"
+              alt=""
+              srcset=""
+              class="post-img"
+            />
+          </a>
+          <!-- <hr> -->
+          <!-- <hr class="horizontal-height"> -->
+          <div class="post">
+            <div class="post-detail">
+              <h1>Useful links for Backend developers</h1>
+              <div class="post-content">
+                <p>
+                  Backend developers are the developers to develop the backend
+                  of the software. Backend developers uses SOLID principles to
+                  make each data secure...
+                </p>
+              </div>
+              <p class="date">3 March 2023</p>
+            </div>
+            <img
+              src="https://courses.wscubetech.com/s/store/courses/5f5338c60cf2d7d974471146/cover.jpg?v=1"
+              alt=""
+              srcset=""
+              class="post-img"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../../js/script.js"></script>
+  </body>
+</html>
